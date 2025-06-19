@@ -6,5 +6,14 @@
 
 
 function calcularFactorial($numero) {
-    // Tu código aquí
+    if($numero<0){
+        return 'Error'; 
+    } else if($numero==0 or $numero==1){
+        return 1;
+    }
+    $f=1;
+    for($n=2; $n<=$numero; $n++){
+        $n=$n*$f;
+        return $n;
+    }
 }
